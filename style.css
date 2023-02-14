@@ -60,9 +60,14 @@ nav img {
   border-radius: 25px;
 }
 
-#intro span{
+#intro a span {
+  margin-left: 12px;
   font-size: small;
   border-radius: 25px;
   background-color: white;
   padding: 3px;
+}
+
+#intro .section2 img {
+  width: 100px;
 }
