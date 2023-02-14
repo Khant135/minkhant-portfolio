@@ -1,0 +1,53 @@
+ 
+ /*
+  #0B0C10
+  #1F2833
+  #C5C6C7
+  #66FCF1
+  #45A29E
+ */
+ 
+ body {
+  margin: 0;
+  padding: 0;
+ }
+ 
+ /* Add styles for the navigation bar */
+ nav {
+  background-color: #66FCF1;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 2.5rem;
+}
+
+nav a {
+  font-size: large;
+  color: #0B0C10;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #45A29E;
+}
+
+nav img {
+  margin-left: 2.5rem;
+  width: 40px;
+}
+
+#intro {
+  margin-left: 2.5rem;
+}
