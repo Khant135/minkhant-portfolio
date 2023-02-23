@@ -5,29 +5,140 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./dist/output.css">
+  <style>
+    .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .progress {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #e5e7eb;
+    border-radius: 0.25rem;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: #96BB7C;
+    border-radius: 0.25rem;
+  }
+  </style>
   <title>Document</title>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="container mx-auto relative p-6">
-    <div class="flex items-center justify-between">
-      <!-- Logo -->
-      <div>
-        Logo
+  <div class="flex flex-col h-screen justify-center items-center">
+    <!-- Navbar -->
+    <nav class="container mx-auto relative p-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div>
+          Logo
+        </div>
+        <!-- Navbar Items -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#home">Home</a>
+          <a href="#aboutme">About Me</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </div>
       </div>
-      <!-- Navbar Items -->
-      <div class="hidden md:flex space-x-6">
-        <a href="">Home</a>
-        <a href="">About Me</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-      </div>
+    </nav>
+  
+    <!-- Home Section -->
+    <div id="home" class="flex flex-col justify-center items-center space-y-3 my-auto">
+      <!-- Home Info -->
+      <h2 class="font-bold text-3xl">
+        I'm Min Khant
+      </h2>
+      <h2 class="font-bold text-3xl">
+        A Web Developer & Designer
+      </h2>
+      <!-- Download Button -->
+      <a href="" class="p-3 bg-main-color rounded-full hover:bg-hover-main">Download CV</a>
     </div>
-  </nav>
+  </div>
 
-  <div>
+  <div id="aboutme" class="container mx-auto flex">
+    <!-- Image Section -->
+    <div class="w-1/2">
+      <img src="" alt="">
+    </div>
+    <div class="w-1/2 flex flex-col justify-start items-start space-y-3">
+      <!-- About Me -->
+      <h2 class="font-bold text-2xl">About Me</h2>
+      <p class="tracking-wide">
+        Hi, My Name is Min Khant. I am now 22 years old who is working as the Web Developer. I graduated High School from Practising High School, Yangon Institute of Education. And Then, I studied
+        Computer Science from NCC Education and from University of Greenwich with the bachelor of 
+        B.Sc (Hons) Computing. 
+      </p>
+      <p class="tracking-wide">
+        My Passion to Develop the Websites became when I first used the internet.
+        Therefore, after I finished my High School, I started to learn the Computer Science and now I can write different kinds of Websites using 
+        different programming framework like Laravel & Vue.
+      </p>
+      <h2 class="font-bold text-lg">Skills</h2>
+      <div class="skills w-full">
+        <div class="skill">
+          <p class="text-sm font-medium w-20">HTML</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="text-sm font-medium w-20">Laravel</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="text-sm font-medium w-20">Vue.js</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="text-sm font-medium w-20">CSS</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="text-sm font-medium w-20">Bootstrap</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="text-sm font-medium w-20">Tailwind</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="text-sm font-medium w-20">WordPress</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Download Button -->
+      <a href="" class="p-3 bg-main-color rounded-full hover:bg-hover-main">Download CV</a>
+    </div>
+  </div>
 
+  <div id="projects" class="container mx-auto">
+    <div class="flex justify-center items-center">
+      <h2 class="font-bold text-2xl">My Projects</h2>
+    </div>
   </div>
   
 </body>

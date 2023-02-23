@@ -12,7 +12,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        // Custormize Colors
+        'main-color' : '#96BB7C',
+        'hover-main' : '#a0bf89',
+        'secondary-color' : '#6C757D'
       }
     },
   },
