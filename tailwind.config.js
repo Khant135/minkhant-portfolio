@@ -14,7 +14,8 @@ module.exports = {
       colors: {
         'main-color' : '#96BB7C',
         'hover-main' : '#a0bf89',
-        'secondary-color' : '#6C757D'
+        'secondary-color' : '#6C757D',
+        'hover-secondary': '#f3f8f2',
       }
     },
   },
