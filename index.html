@@ -62,31 +62,37 @@
   .image-container:hover .image-text {
     bottom: 0;
   }
+  .navbar-scroll {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+  }
   </style>
   <title>Document</title>
 </head>
 <body>
 
-  <div class="flex flex-col h-screen justify-center items-center">
+  <div class="flex flex-col h-screen justify-center items-center bg-hero-section bg-cover bg-no-repeat">
     <!-- Navbar -->
-    <nav class="container mx-auto relative p-6">
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div>
-          Logo
-        </div>
-        <!-- Navbar Items -->
-        <div class="hidden md:flex space-x-6">
-          <a href="#home">Home</a>
-          <a href="#aboutme">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+    <nav id="navbar" class="text-white p-6 w-full fixed top-0 z-10">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div>
+            Logo
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a href="#home">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
   
     <!-- Home Section -->
-    <div id="home" class="flex flex-col justify-center items-center space-y-3 my-auto">
+    <div id="home" class="flex flex-col justify-center items-center space-y-3 my-auto text-white">
       <!-- Home Info -->
       <h2 class="font-bold text-3xl">
         I'm Min Khant
@@ -95,15 +101,18 @@
         A Web Developer & Designer
       </h2>
       <!-- Download Button -->
-      <a href="" class="p-3 bg-main-color rounded-full hover:bg-hover-main">Download CV</a>
+      <blockquote>
+        "It does not matter how slowly you go as long as you do not stop."
+      </blockquote>
+      <footer>- Confucius</footer>
     </div>
   </div>
 
   <!-- About Me -->
   <div id="aboutme" class="container mx-auto flex my-10">
     <!-- Image Section -->
-    <div class="w-1/2">
-      <img src="" alt="">
+    <div class="w-1/2 px-10">
+      <img src="./image/profile.jpg" alt="">
     </div>
     <div class="w-1/2 flex flex-col justify-start items-start space-y-3">
       <!-- About Me -->
@@ -390,7 +399,16 @@
     </div>
   </div>
   
-  
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+  </script>
   <script src="https://kit.fontawesome.com/ecb87958a2.js" crossorigin="anonymous"></script>
 </body>
 </html>

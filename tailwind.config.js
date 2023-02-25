@@ -16,6 +16,9 @@ module.exports = {
         'hover-main' : '#a0bf89',
         'secondary-color' : '#6C757D',
         'hover-secondary': '#f3f8f2',
+      },
+      backgroundImage: {
+        'hero-section' : "url('/image/jefferson-santos-9SoCnyQmkzI-unsplash.jpg')",
       }
     },
   },
