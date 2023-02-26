@@ -109,12 +109,12 @@
   </div>
 
   <!-- About Me -->
-  <div id="aboutme" class="container mx-auto flex my-10">
+  <div id="aboutme" class="container mx-auto md:flex my-10">
     <!-- Image Section -->
-    <div class="w-1/2 px-10">
-      <img src="./image/profile.jpg" alt="">
+    <div class="w-full md:w-1/2 px-10 flex items-center justify-center md:mb-0 mb-5">
+      <img src="./image/profile.jpg" alt="" class="w-1/2 md:w-full md:rounded-none rounded">
     </div>
-    <div class="w-1/2 flex flex-col justify-start items-start space-y-3">
+    <div class="w-full md:w-1/2 flex flex-col justify-start items-start px-3 space-y-3">
       <!-- About Me -->
       <h2 class="font-bold text-2xl">About Me</h2>
       <p class="tracking-wide">
@@ -178,8 +178,8 @@
   </div>
 
   <!-- Experience -->
-  <div class="container mx-auto flex my-10">
-    <div class="w-1/2 flex flex-col justify-start items-start px-3 space-y-5">
+  <div class="container mx-auto md:flex my-10">
+    <div class="w-full md:w-1/2 flex flex-col justify-start items-start px-3 space-y-5 md:mb-0 mb-5">
       <h2 class="font-bold text-2xl">
         Education
       </h2>
@@ -248,7 +248,7 @@
       </div>
       <hr class="w-full bg-main-color">
     </div>
-    <div class="w-1/2 flex flex-col justify-start items-start px-3 space-y-5">
+    <div class="w-full md:w-1/2 flex flex-col justify-start items-start px-3 space-y-5">
       <h2 class="font-bold text-2xl">
         Work Experience
       </h2>
@@ -278,8 +278,8 @@
     <div class="flex justify-center items-center">
       <h2 class="font-bold text-2xl">My Projects</h2>
     </div>
-    <div class="flex flex-wrap m-5 justify-center items-center">
-      <div class="w-1/3 pr-2 mb-2 image-container cursor-pointer">
+    <div class="md:flex flex-wrap m-5 justify-center items-center">
+      <div class="w-full md:w-1/3 pr-2 mb-2 image-container cursor-pointer">
         <img src="./image/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg">
         <div class="image-text flex flex-col justify-between">
           <h3 class="font-bold text-lg">E-commerce Website</h3>
@@ -290,7 +290,7 @@
           <span><i class="fa-brands fa-github"></i></span>
         </div>
       </div>
-      <div class="w-1/3 pr-2 mb-2 image-container cursor-pointer">
+      <div class="w-full md:w-1/3 pr-2 mb-2 image-container cursor-pointer">
         <img src="./image/jason-leung-poI7DelFiVA-unsplash.jpg">
         <div class="image-text flex flex-col justify-between">
           <h3 class="font-bold text-lg">Restaurant Management System</h3>
@@ -301,7 +301,7 @@
           <span><i class="fa-brands fa-github"></i></span>
         </div>
       </div>
-      <div class="w-1/3 pr-2 mb-2 image-container cursor-pointer">
+      <div class="w-full md:w-1/3 pr-2 mb-2 image-container cursor-pointer">
         <img src="./image/luke-porter-NEqEC7qa9FM-unsplash.jpg">
         <div class="image-text flex flex-col justify-between">
           <h3 class="font-bold text-lg">Travel & Tour Website</h3>
@@ -312,7 +312,7 @@
           <span><i class="fa-brands fa-github"></i></span>
         </div>
       </div>
-      <div class="w-1/3 pr-2 mb-2 image-container cursor-pointer">
+      <div class="w-full md:w-1/3 pr-2 mb-2 image-container cursor-pointer">
         <img src="./image/trnava-university-BEEyeib-am8-unsplash.jpg">
         <div class="image-text flex flex-col justify-between">
           <h3 class="font-bold text-lg">Library Management System</h3>
@@ -323,7 +323,7 @@
           <span><i class="fa-brands fa-github"></i></span>
         </div>
       </div>
-      <div class="w-1/3 pr-2 mb-2 image-container cursor-pointer">
+      <div class="w-full md:w-1/3 pr-2 mb-2 image-container cursor-pointer">
         <img src="./image/darya-tryfanava-d55fhArDES0-unsplash.jpg">
         <div class="image-text flex flex-col justify-between">
           <h3 class="font-bold text-lg">University Blog Website</h3>
@@ -342,18 +342,18 @@
       <div class="flex justify-center items-center">
         <h2 class="font-bold text-2xl">Contact Me</h2>
       </div>
-      <div class="flex my-5 justify-between space-x-3">
-        <div class="w-1/4 space-y-5">
+      <div class="flex md:flex-row flex-col my-5 justify-between md:space-x-3 px-3">
+        <div class="md:w-1/4 w-full space-y-5 md:mb-0 mb-5">
           <h3 class="font-bold text-lg">
             About Me
           </h3>
           <p>
-            A Web Developer with the knowledge of differnt programming frameworks. 
+            A Web Developer with the knowledge of different programming frameworks. 
             Have the passions to learn new knowledges & ability to solve different kinds 
             of challenges.  
           </p>
         </div>
-        <div class="w-1/4 space-y-5">
+        <div class="md:block hidden w-1/4 space-y-5">
           <h3 class="font-bold text-lg">
             Languages
           </h3>
@@ -366,7 +366,7 @@
             <span>Tailwind</span>
           </p>
         </div>
-        <div class="w-1/4 space-y-5">
+        <div class="md:block hidden w-1/4 space-y-5">
           <h3 class="font-bold text-lg">
             Services
           </h3>
@@ -377,7 +377,7 @@
             <span>Wordpress</span>
           </p>
         </div>
-        <div class="w-1/4 space-y-5">
+        <div class="md:w-1/4 w-full space-y-5">
           <h3 class="font-bold text-lg">
             Contact
           </h3>
