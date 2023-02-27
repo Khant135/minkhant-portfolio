@@ -619,6 +619,10 @@ video {
   height: 100vh;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -765,6 +769,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -888,6 +896,10 @@ video {
     display: none;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -916,6 +928,10 @@ video {
 
   .md\:rounded-none {
     border-radius: 0px;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .md\:text-3xl {
