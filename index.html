@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./image/m_logo.png">
   <link rel="stylesheet" href="./dist/output.css">
   <link rel="stylesheet" href="https://kit.fontawesome.com/ecb87958a2.css" crossorigin="anonymous">
   <style>
@@ -96,7 +97,7 @@
     <nav id="navbar" class="text-white p-6 w-full fixed top-0 z-10">
       <div class="container mx-auto">
         <div class="flex items-center justify-between">
-          <div>
+          <div class="text-lg">
             MIN KHANT
           </div>
           <div class="hidden md:flex space-x-6">
@@ -205,7 +206,7 @@
   </div>
 
   <!-- Experience -->
-  <div class="container mx-auto md:flex my-10">
+  <div id="experience" class="container mx-auto md:flex my-10">
     <div class="w-full md:w-1/2 flex flex-col justify-start items-start px-3 space-y-5 md:mb-0 mb-5">
       <h2 class="font-bold text-2xl">
         Education
@@ -301,7 +302,8 @@
     </div>
   </div>
 
-  <div id="projects" class="container mx-auto my-10">
+  <!-- Projects -->
+  <div id="projects" class="body container mx-auto my-10">
     <div class="flex justify-center items-center">
       <h2 class="font-bold text-2xl">My Projects</h2>
     </div>
@@ -358,8 +360,9 @@
     </div>
   </div>
 
-  <div class="bg-hover-secondary">
-    <div id="contact" class="container mx-auto pt-10">
+  <!-- Contact Me -->
+  <div id="contact" class="body bg-hover-secondary">
+    <div class="container mx-auto pt-10">
       <div class="flex justify-center items-center">
         <h2 class="font-bold text-2xl">Contact Me</h2>
       </div>
@@ -436,6 +439,18 @@
     </div>
   </div>
   
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://kit.fontawesome.com/ecb87958a2.js" crossorigin="anonymous"></script>
+
+  <script>
+    ScrollReveal().reveal('#home', { delay: 100 });
+    ScrollReveal().reveal('#aboutme', { delay: 200 });
+    ScrollReveal().reveal('#experience', { delay: 300 });
+    ScrollReveal().reveal('#projects', { delay: 400 });
+    ScrollReveal().reveal('#contact', { delay: 500 });
+  </script>
+
   <script>
     const hambugermenu = document.getElementById('hambuger-menu');
     const hambuger = document.getElementById('hambuger');
@@ -449,6 +464,7 @@
       }
     });
   </script>
+
   <script>
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
@@ -459,6 +475,6 @@
       }
     });
   </script>
-  <script src="https://kit.fontawesome.com/ecb87958a2.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
